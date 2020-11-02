@@ -11,7 +11,7 @@ const About = () => {
                 <div className="col-lg-6 about">
                     <h3>About Me</h3>
                     <div className="description">
-                        <p>Hello! I'm Nusrat Jahan, a Frontend Web Developer living in Noakhali, Bangladesh who enjoys building things that live on the internet and people's devices. I develop exceptional web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends for 1 year.</p>
+                        <p>Hello! I'm Nusrat Jahan, a Frontend Web Developer living in Noakhali, Bangladesh who enjoys building things that live on the internet and people's devices. I develop exceptional web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.</p>
                         <p>Here are a few technologies I've been working with recently:</p>
                     </div>
                     <div className="skills">
