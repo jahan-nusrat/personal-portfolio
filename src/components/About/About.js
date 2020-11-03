@@ -42,7 +42,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="col-lg-5 text-center mt-5">
-                    <a target="_blank" href="https://github.com/jahan-nusrat">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/jahan-nusrat">
                         <img src={me} alt="me" className="img-fluid picture" />
                     </a>
                 </div>

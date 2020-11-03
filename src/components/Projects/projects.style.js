@@ -31,6 +31,10 @@ export const ProjectContainer = styled.section`
         position:relative;
         margin-bottom: 5rem;
         .project-img{
+            .card{
+                background-color:transparent;
+                border: 1px solid transparent;
+            }
             box-shadow:rgb(10 25 47) 0px 10px 30px -15px;
             img{
                 cursor:pointer;
