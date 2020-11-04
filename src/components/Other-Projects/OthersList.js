@@ -20,8 +20,8 @@ const OthersList = ({project}) => {
                 <div className="top d-flex justify-content-between align-items-center mb-4">
                     <FaFolderOpen className="openFolder" />
                     <div className="social-icon d-flex">
-                        <a className="px-2" target="_blank" rel="noopener noreferrer"href={project.github}><FaGithub className="icon" /></a>
-                        <a className="px-2" target="_blank" rel="noopener noreferrer"href={project.live}><FaExternalLinkAlt className="icon" /></a>
+                        <a className="px-2" target="_blank" rel="nofollow noopener noreferrer"href={project.github}><FaGithub className="icon" /></a>
+                        <a className="px-2" target="_blank" rel="nofollow noopener noreferrer"href={project.live}><FaExternalLinkAlt className="icon" /></a>
                     </div>
                 </div>
                 <div className="card-details">

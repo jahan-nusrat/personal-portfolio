@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import About from '../About/About';
 import Projects from '../Projects/Projects';
 import Others from '../Other-Projects/Others';
+import Footer from '../Footer/Footer';
 
 const StyledHeader= styled.header`
     position:relative;
@@ -20,6 +21,7 @@ const Home = () => {
             <About />
             <Projects />
             <Others />
+            <Footer />
         </section>
         
     )
