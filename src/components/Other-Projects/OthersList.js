@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {FaFolderOpen} from 'react-icons/fa';
 import {FaGithub,FaExternalLinkAlt} from 'react-icons/fa';
 import { useSpring, animated } from 'react-spring';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
 const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const OthersList = ({project}) => {
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 }, }));
+    useEffect(()=>{
+        Aos.init({duration:1500})
+    },[])
+
     return (
-        <div className="col-lg-4" style={{marginTop:'4rem'}}>
+        <div className="col-lg-4" style={{marginTop:'4rem'}}  data-aos="fade-up">
             <animated.div
                 className="card"
                 onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}

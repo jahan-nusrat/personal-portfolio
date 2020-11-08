@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { StyledContainer } from './about.style'
 import me from '../../image/me.png';
 import {FaGenderless} from 'react-icons/fa'
 import { backend, frontend, tools } from '../../data/data';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+    useEffect(()=>{
+        Aos.init({ duration: 2500})
+    },[])
+
     return (
-        <StyledContainer className="container mt-5">
+        <StyledContainer className="container mt-5" id="about-container" data-aos="fade-up">
             <div className="row justify-content-center align-items-center">
                 <div className="col-lg-6 about">
                     <h3>About Me</h3>

@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { NavContainer } from './nav.style'
 import logo from '../../image/logo.png'
+import {Link} from 'react-scroll'
 
 const Nav = () => {
     return (
@@ -14,13 +14,16 @@ const Nav = () => {
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav ml-auto">
       <li className="nav-item">
-        <a className="nav-link" href="#">About</a>
+        <Link className="nav-link" to="about-container" smooth={true} duration={1000}>About</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Experience</a>
+        <Link className="nav-link" to="project-container" smooth={true} duration={1200}>Work</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Work</a>
+        <Link className="nav-link" to="others-container" smooth={true} duration={1200}>Others</Link>
+      </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="others-container" smooth={true} duration={1200}>Blogs</Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Contact</a>

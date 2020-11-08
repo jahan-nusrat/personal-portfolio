@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {FaGithub,FaExternalLinkAlt} from 'react-icons/fa';
 import { useSpring, animated } from 'react-spring';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
 const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const ProjectCard = ({project}) => {
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 }, }));
+    useEffect(()=>{
+        Aos.init({ duration:3000 })
+    },[])
+
     return (
         <div className="row mt-5 align-items-center projects justify-content-start pl-5">
-            <div className="col-lg-6 project-img">
+            <div className="col-lg-6 project-img" data-aos="fade-right">
             <animated.div
                 className="card"
                 onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}

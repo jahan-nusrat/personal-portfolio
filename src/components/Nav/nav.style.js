@@ -26,6 +26,7 @@ export const NavContainer=styled.nav`
                 font-size:14px;
                 font-weight:500;
                 transition:all 0.3s linear;
+                cursor:pointer;
                 &:hover{
                     color:#47FFDA;
                 }
