@@ -57,3 +57,24 @@ export const otherProjects=[
         technologies:'React, Context API, Firebase, Material-UI'
     },
 ]
+
+export const blogs=[
+    {
+        id:0,
+        title: 'Lists of Top 10 JavaScript array methods a beginner Js developer should know',
+        publishedOn: 'Aug 18, 2020',
+        subtitle: 'Useful and Handy array methods in everyday use'
+    },
+    {
+        id:1,
+        title: 'Next Generation JavaScript Features',
+        publishedOn: 'Aug 22, 2020',
+        subtitle: 'A brief introduction into some core next-gen JavaScript features.'
+    },
+    {
+        id:2,
+        title: '10 Most Common React Interview Questions',
+        publishedOn: 'Nov 7, 2020',
+        subtitle: 'Get over your fear of interviews as a React Developer'
+    },
+]

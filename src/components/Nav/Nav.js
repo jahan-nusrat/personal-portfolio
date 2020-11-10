@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavContainer } from './nav.style'
 import logo from '../../image/logo.png'
-import {Link} from 'react-scroll'
+import {Link as Scroll} from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
@@ -14,22 +15,22 @@ const Nav = () => {
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav ml-auto">
       <li className="nav-item">
-        <Link className="nav-link" to="about-container" smooth={true} duration={1000}>About</Link>
+        <Scroll className="nav-link" to="about-container" smooth={true} duration={1000}>About</Scroll>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="project-container" smooth={true} duration={1200}>Work</Link>
+        <Scroll className="nav-link" to="project-container" smooth={true} duration={1200}>Work</Scroll>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="others-container" smooth={true} duration={1200}>Others</Link>
+        <Scroll className="nav-link" to="others-container" smooth={true} duration={1200}>Others</Scroll>
       </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="others-container" smooth={true} duration={1200}>Blogs</Link>
+     {/*  <li className="nav-item">
+        <Link to="/blog" className="nav-link">Blogs</Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Contact</a>
-      </li>
+      </li> */}
       <li className="nav-item">
-        <a className="nav-link" href="#">Resume</a>
+        <a className="nav-link" target="_blank" rel="noopener noreferrer"  href="https://drive.google.com/file/d/1Lk2uD8SRuFp83IJRNs-UohXKl6ynbz5R/view?usp=sharing">Resume</a>
       </li>
     </ul>
   </div>

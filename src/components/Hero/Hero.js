@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { StyledContainer } from './hero.style'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
+    useEffect(() =>{
+        Aos.init({ duration: 2500})
+    },[])
     return (
-        <StyledContainer className="container mt-5">
+        <StyledContainer className="container mt-5" data-aos="fade-down">
             <div className="row justify-content-center">
                 <div className="col-lg-11 myself">
                     <h1 className="greetings">Hi, my name is</h1>
                     <h2 className="name">Nusrat Jahan.</h2>
                     <h3 className="things mb-0">I build things for the internet.</h3>
-                    <p className="info">Nusrat Jahan is a Frontend Web Developer specializing in building (and occasionally designing) exceptional, high-quality websites and applications for web. Currently working at <a target="_blank" rel="noopener noreferrer" style={{color:'#47FFDA',textDecoration:'none'}} href="https://www.zaubacorp.com/company/APPTIVISM-PRIVATE-LIMITED/U72900RJ2020PTC071106">APPTIVISM Pvt. Ltd.</a> as a ReactJS Developer where she contributes to the SaaS applications for Retail customers by making Components with React, Redux, RxJS etc.</p>
-                    <a href="mailto:njnusrat53@gmail.com" className="btn px-4 py-3">Get In Touch</a>
+                    <p className="info">Nusrat Jahan is a Frontend Web Developer specializing in building (and occasionally designing) exceptional, high-quality websites and applications for web. I have recently graduated from <a target="_blank" rel="noopener noreferrer" style={{color:'#47FFDA',textDecoration:'none'}} href="https://nstu.edu.bd/">Noakhali Science & Technology University</a> with a B.Sc. degree in <span style={{color:'#47FFDA',textDecoration:'none'}}>Information and Communication Engineering</span> .</p>
                 </div>
             </div>
         </StyledContainer>
