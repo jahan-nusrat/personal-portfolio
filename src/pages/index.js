@@ -1,11 +1,5 @@
-import React from 'react'
+import React from "react"
 
-const index = () => {
-    return (
-        <div>
-            <h3>Hello gatsby</h3>
-        </div>
-    )
+export default function Home() {
+  return <div>Hello world!</div>
 }
-
-export default index
