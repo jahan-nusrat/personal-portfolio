@@ -32,7 +32,7 @@ const data = [
 const links = data.map(link =>{
     return (
         <li key={link.id}>
-            <Link className="nav-link" to={link.url}>{link.id}. {link.text}</Link>
+            <Link className="nav-link" to={link.url}>0{link.id}. {link.text}</Link>
         </li>
     )
 })
